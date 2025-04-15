@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>使用方法 | NSudo</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2582D3">
+    <meta name="description" content="系統管理工具包">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="M2-Team">
+    <meta name="keywords" content="trustedinstaller,system,session,windows,token,integritylevel,privileges,nsudo,administration,process,devilmode,bypass,accesscheck,ntapi,launcher">
+    <meta name="theme-color" content="#2582D3">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="Copyright" content="Copyright M2-Team All Rights Reserved.">
+    
+    <link rel="preload" href="/assets/css/0.styles.ab23c1ca.css" as="style"><link rel="preload" href="/assets/js/app.9c830796.js" as="script"><link rel="preload" href="/assets/js/2.06c3efad.js" as="script"><link rel="preload" href="/assets/js/3.5d8d6e25.js" as="script"><link rel="preload" href="/assets/js/34.e923e579.js" as="script"><link rel="prefetch" href="/assets/js/10.01957421.js"><link rel="prefetch" href="/assets/js/11.9e91be25.js"><link rel="prefetch" href="/assets/js/12.b55a300d.js"><link rel="prefetch" href="/assets/js/13.bb68e186.js"><link rel="prefetch" href="/assets/js/14.40656faf.js"><link rel="prefetch" href="/assets/js/15.48985194.js"><link rel="prefetch" href="/assets/js/16.f84aff00.js"><link rel="prefetch" href="/assets/js/17.b7e27c7e.js"><link rel="prefetch" href="/assets/js/18.c03ecb62.js"><link rel="prefetch" href="/assets/js/19.13454540.js"><link rel="prefetch" href="/assets/js/20.dab42696.js"><link rel="prefetch" href="/assets/js/21.e2d67ca3.js"><link rel="prefetch" href="/assets/js/22.addb0317.js"><link rel="prefetch" href="/assets/js/23.27373a60.js"><link rel="prefetch" href="/assets/js/24.182855be.js"><link rel="prefetch" href="/assets/js/25.7970c46e.js"><link rel="prefetch" href="/assets/js/26.e3dbf761.js"><link rel="prefetch" href="/assets/js/27.3d4d90cb.js"><link rel="prefetch" href="/assets/js/28.2f4c60b7.js"><link rel="prefetch" href="/assets/js/29.f8a90f95.js"><link rel="prefetch" href="/assets/js/30.971ba102.js"><link rel="prefetch" href="/assets/js/31.60104c5c.js"><link rel="prefetch" href="/assets/js/32.c731fb6f.js"><link rel="prefetch" href="/assets/js/33.d1657850.js"><link rel="prefetch" href="/assets/js/35.52cb48f5.js"><link rel="prefetch" href="/assets/js/36.e674b900.js"><link rel="prefetch" href="/assets/js/4.6d042776.js"><link rel="prefetch" href="/assets/js/5.8d4898c6.js"><link rel="prefetch" href="/assets/js/6.9829e4ec.js"><link rel="prefetch" href="/assets/js/7.8bd9e298.js"><link rel="prefetch" href="/assets/js/8.ad86aa69.js"><link rel="prefetch" href="/assets/js/9.ab626035.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ab23c1ca.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zh-hant/" class="home-link router-link-active"><img src="/assets/img/logo.png" alt="NSudo" class="logo"> <span class="site-name can-hide">NSudo</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zh-hant/" class="nav-link">
+  主頁
+</a></div><div class="nav-item"><a href="/zh-hant/Download.html" class="nav-link">
+  下載
+</a></div><div class="nav-item"><a href="/zh-hant/Support.html" class="nav-link">
+  支援
+</a></div><div class="nav-item"><a href="/zh-hant/docs/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  文獻
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">選擇語言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">選擇語言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/en-us/docs/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/zh-hans/docs/" class="nav-link">
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/zh-hant/docs/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  繁體中文
+</a></li><li class="dropdown-item"><!----> <a href="/ru-ru/docs/" class="nav-link">
+  Русский
+</a></li></ul></div></div> <a href="https://github.com/m2team/NSudo" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zh-hant/" class="nav-link">
+  主頁
+</a></div><div class="nav-item"><a href="/zh-hant/Download.html" class="nav-link">
+  下載
+</a></div><div class="nav-item"><a href="/zh-hant/Support.html" class="nav-link">
+  支援
+</a></div><div class="nav-item"><a href="/zh-hant/docs/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  文獻
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">選擇語言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">選擇語言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/en-us/docs/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/zh-hans/docs/" class="nav-link">
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/zh-hant/docs/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  繁體中文
+</a></li><li class="dropdown-item"><!----> <a href="/ru-ru/docs/" class="nav-link">
+  Русский
+</a></li></ul></div></div> <a href="https://github.com/m2team/NSudo" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/zh-hant/docs/" aria-current="page" class="active sidebar-link">使用方法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zh-hant/docs/#快速入門" class="sidebar-link">快速入門</a></li><li class="sidebar-sub-header"><a href="/zh-hant/docs/#命令列選項" class="sidebar-link">命令列選項</a></li><li class="sidebar-sub-header"><a href="/zh-hant/docs/#常用列表" class="sidebar-link">常用列表</a></li></ul></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>檔案</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zh-hant/docs/Changelog.html" class="sidebar-link">變更紀錄</a></li><li><a href="/zh-hant/docs/DevilMode.html" class="sidebar-link">NSudo 惡魔模式</a></li><li><a href="/zh-hant/docs/SharedLibrary.html" class="sidebar-link">NSudo 共享庫</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="使用方法"><a href="#使用方法" class="header-anchor">#</a> 使用方法</h1> <h2 id="快速入門"><a href="#快速入門" class="header-anchor">#</a> 快速入門</h2> <p>請開啟【CPU 架構】目錄, 然後按兩下 NSudo.exe。根據提示操作即可。例如, 如果你想
+在你的 Intel 或 AMD 設備上使用 64 位 NSudo, 你首先需要開啟的是 x64 目錄, 然後按兩
+下 NSudoG.exe。</p> <h2 id="命令列選項"><a href="#命令列選項" class="header-anchor">#</a> 命令列選項</h2> <div class="language-batch extra-class"><pre class="language-batch"><code>格式: NSudoL [ 選項與參數 ] 命令列執行或常用任務名
+
+選項:
+
+-U:[ 選項 ] 以指定使用者選項建立處理程序。
+可用選項:
+    <span class="token command"><span class="token keyword">T</span> TrustedInstaller</span>
+    <span class="token command"><span class="token keyword">S</span> System</span>
+    <span class="token command"><span class="token keyword">C</span> 當前使用者</span>
+    <span class="token command"><span class="token keyword">E</span> 當前使用者 (提權</span><span class="token punctuation">)</span>
+    <span class="token command"><span class="token keyword">P</span> 當前處理程序</span>
+    <span class="token command"><span class="token keyword">D</span> 當前處理程序 (降權</span><span class="token punctuation">)</span>
+<span class="token command"><span class="token keyword">PS</span>: 這是一個必須被包含的參數。</span>
+
+-P:[ 選項 ] 以指定特殊權限選項建立處理程序。
+可用選項:
+    <span class="token command"><span class="token keyword">E</span> 啓用全部特殊權限</span>
+    <span class="token command"><span class="token keyword">D</span> 禁用所有特殊權限</span>
+<span class="token command"><span class="token keyword">PS</span>: 如果想以默認特殊權限選項建立處理程序, 請不要包含「<span class="token parameter attr-name">-P</span>」參數。</span>
+
+-M:[ 選項 ] 以指定完整性選項建立處理程序。
+可用選項:
+    <span class="token command"><span class="token keyword">S</span> 系統</span>
+    <span class="token command"><span class="token keyword">H</span> 高</span>
+    <span class="token command"><span class="token keyword">M</span> 中</span>
+    <span class="token command"><span class="token keyword">L</span> 低</span>
+<span class="token command"><span class="token keyword">PS</span>: 如果想以默認完整性選項建立處理程序的話, 請不要包含「<span class="token parameter attr-name">-M</span>」參數。</span>
+
+-Priority:[ 選項 ] 以指定處理程序優先級選項建立處理程序。
+可用選項:
+    <span class="token command"><span class="token keyword">Idle</span> 低</span>
+    <span class="token command"><span class="token keyword">BelowNormal</span> 低於正常</span>
+    <span class="token command"><span class="token keyword">Normal</span> 正常</span>
+    <span class="token command"><span class="token keyword">AboveNormal</span> 高於正常</span>
+    <span class="token command"><span class="token keyword">High</span> 高</span>
+    <span class="token command"><span class="token keyword">RealTime</span> 實時</span>
+<span class="token command"><span class="token keyword">PS</span>: 如果想以默認處理序優先權選項建立處理程序, 請不要包含「-Priority」參數。</span>
+
+-ShowWindowMode:[ 選項 ] 以指定視窗模式選項建立處理程序。
+可用選項:
+    <span class="token command"><span class="token keyword">Show</span> 顯示視窗</span>
+    <span class="token command"><span class="token keyword">Hide</span> 隱藏視窗</span>
+    <span class="token command"><span class="token keyword">Maximize</span> 最大化</span>
+    <span class="token command"><span class="token keyword">Minimize</span> 最小化</span>
+<span class="token command"><span class="token keyword">PS</span>: 如果想以默認視窗模式選項建立處理程序的話, 請不要包含「-ShowWindowMode」參</span>
+數。
+
+-Wait 令 NSudo Launcher 等待建立的處理程序結束後再退出。
+<span class="token command"><span class="token keyword">PS</span>: 如果不想等待, 請不要包含「-Wait」參數。</span>
+
+-CurrentDirectory:[ 目錄路徑 ] 設置處理程序的當前目錄。
+<span class="token command"><span class="token keyword">PS</span>: 如果你想用 NSudo Launcher 的當前目錄, 請不要包含「-CurrentDirectory」參數。</span>
+
+-UseCurrentConsole 使用當前控制台視窗建立處理程序。
+<span class="token command"><span class="token keyword">PS</span>: 如果你想在新控制台視窗建立處理程序, 請不要包含「-UseCurrentConsole」參數。</span>
+
+-Version 顯示 NSudo Launcher 版本資訊。
+
+-? 顯示該內容。
+-H 顯示該內容。
+-Help 顯示該內容。
+
+上下文清單管理請使用 https://github.com/Thdub/NSudo_Installer。
+
+<span class="token command"><span class="token keyword">PS</span>:</span>
+    <span class="token command"><span class="token keyword">1</span>. 所有的 NSudo Launcher 命令列參數不區分大小寫。</span>
+    <span class="token command"><span class="token keyword">1</span>. 可以在命令行參數中使用 <span class="token string">&quot;/&quot;</span> 或 <span class="token string">&quot;--&quot;</span> 代替 <span class="token string">&quot;-&quot;</span> 和使用 <span class="token string">&quot;=&quot;</span> 代替 <span class="token string">&quot;:&quot;</span>。例如</span>
+       &quot;/U:T&quot; 和 &quot;-U=T&quot; 是等價的。
+    <span class="token command"><span class="token keyword">1</span>. 為了保證最佳體驗, NSudoLC 不支持上下文清單。</span>
+
+例子:
+    以TrustedInstaller權限, 啓用所有特殊權限, 完整性默認執行命令提示字元
+        <span class="token command"><span class="token keyword">NSudoL</span> <span class="token parameter attr-name">-U</span><span class="token label property">:T</span> <span class="token parameter attr-name">-P</span><span class="token label property">:E</span> cmd</span>
+</code></pre></div><p>例子: 以 TrustedInstaller 權限, 啓用所有特殊權限, 完整性默認執行命令提示字元:</p> <div class="language-batch extra-class"><pre class="language-batch"><code><span class="token command"><span class="token keyword">NSudo</span> <span class="token parameter attr-name">-U</span><span class="token label property">:T</span> <span class="token parameter attr-name">-P</span><span class="token label property">:E</span> cmd</span>
+</code></pre></div><p>從 NSudo 5.0.1708.16 開始命令列支持嵌套引號, 例如:</p> <div class="language-batch extra-class"><pre class="language-batch"><code><span class="token command"><span class="token keyword">NSudo</span> <span class="token parameter attr-name">-U</span><span class="token label property">:T</span> cmd <span class="token parameter attr-name">/c</span> <span class="token string">&quot;dir &quot;</span>C:\Program Files<span class="token string">&quot; &amp; pause&quot;</span></span>
+</code></pre></div><h2 id="常用列表"><a href="#常用列表" class="header-anchor">#</a> 常用列表</h2> <p>關於常用列表的自訂,可以使用記事本等工具編輯 NSudo.json。你可以照著示例的做法添
+加你的自訂項目:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;ShortCutList_V2&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;命令提示字元&quot;</span><span class="token operator">:</span> <span class="token string">&quot;cmd&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;PowerShell&quot;</span><span class="token operator">:</span> <span class="token string">&quot;powershell&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;PowerShell ISE&quot;</span><span class="token operator">:</span> <span class="token string">&quot;powershell_ise&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Hosts編輯&quot;</span><span class="token operator">:</span> <span class="token string">&quot;notepad %windir%\\System32\\Drivers\\etc\\hosts&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/m2team/NSudo/edit/master/Website/zh-hant/docs/Readme.md" target="_blank" rel="noopener noreferrer">在 GitHub 上編輯此頁</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">最後更新時間:</span> <span class="time">2022/02/27 16:31</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/zh-hant/docs/Changelog.html">
+        變更紀錄
+      </a>
+      →
+    </span></p></div> <div class="page-footer"><ul class="inner"><li>
+      Copyright © <a href="https://m2team.org/" target="_blank" rel="noopener noreferrer"> M2-Team </a> and Contributors. All rights reserved.
+    </li> <li><a href="https://github.com/M2Team/NSudo/blob/master/License.md" target="_blank" rel="noopener noreferrer">MIT</a> Licensed
+    </li> <li><a href="https://github.com/M2Team/NSudo/issues" target="_blank" rel="noopener noreferrer">GitHub Issue </a></li><li><a href="https://github.com/M2Team/NSudo/blob/master/People.md" target="_blank" rel="noopener noreferrer">相關人士</a></li></ul></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.9c830796.js" defer></script><script src="/assets/js/2.06c3efad.js" defer></script><script src="/assets/js/3.5d8d6e25.js" defer></script><script src="/assets/js/34.e923e579.js" defer></script>
+  </body>
+</html>
