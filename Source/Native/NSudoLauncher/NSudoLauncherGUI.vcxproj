@@ -18,6 +18,10 @@
     <Import Project="..\WTL\WTL.props" />
     <Import Project="NSudoLauncherResources.props" />
   </ImportGroup>
+  <PropertyGroup Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="M2Win32GUIHelpers.cpp" />
     <ClCompile Include="NSudoLauncherGUI.cpp" />

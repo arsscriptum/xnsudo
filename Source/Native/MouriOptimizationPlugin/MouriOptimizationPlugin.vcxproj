@@ -17,6 +17,10 @@
     <Import Project="..\NSudoSDK\NSudoSDK.props" />
     <Import Project="..\MINT\MINT.props" />
   </ImportGroup>
+  <PropertyGroup Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
   <ItemDefinitionGroup>
     <Link>
       <ModuleDefinitionFile>MouriOptimizationPlugin.def</ModuleDefinitionFile>

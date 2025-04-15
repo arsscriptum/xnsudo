@@ -15,6 +15,10 @@
   <ImportGroup Label="PropertySheets">
     <Import Project="..\NSudoSDK\NSudoSDK.props" />
   </ImportGroup>
+  <PropertyGroup Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>  
   <ItemGroup>
     <ClCompile Include="NSudoPluginHost.cpp" />
   </ItemGroup>
