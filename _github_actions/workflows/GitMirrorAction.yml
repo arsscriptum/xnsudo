@@ -1,0 +1,26 @@
+﻿name: Git Mirror Action
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@main
+        with:
+          ref: 'master'
+          persist-credentials: false
+          fetch-depth: 0
+
+      - run: |
+          date > generated.txt
+          git remote add github https://github.com/arsscriptum/nxsudo.git
+          git fetch -q --all
+          git push -q https://arsscriptum:${{ secrets.GITHUB_TOKEN }}github.com/arsscriptum/nxsudo.git master --tags
+
+
